@@ -1,0 +1,21 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    childprocess (0.8.0)
+      ffi (~> 1.0, >= 1.0.11)
+    ffi (1.9.21)
+    interact (0.5.2)
+    rubyzip (1.2.1)
+    selenium-webdriver (3.9.0)
+      childprocess (~> 0.5)
+      rubyzip (~> 1.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  interact
+  selenium-webdriver
+
+BUNDLED WITH
+   1.14.6
