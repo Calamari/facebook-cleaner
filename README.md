@@ -10,3 +10,13 @@ For this it uses the facebook mobile page, because it just doesn't have Javascri
 bundle
 ruby rub.rb
 ```
+
+You'll be asked to enter your name, your password (securely of course), your username (that thing, that is written after www.facebook.com/ if you click on your profile) and the year you want to delete.
+
+## Guarantees that it will work?
+
+Nope, but after some iterations it ran through my years of facebook posts and did a pretty good job deleting almost all of it. So it definitely saves you a lot of time.
+
+## License
+
+MIT, see `LICENSE` file
