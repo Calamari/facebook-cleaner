@@ -4,6 +4,10 @@ This is a command line script written in ruby that lets you delete all the years
 
 For this it uses the facebook mobile page, because it just doesn't have Javascript und presents the last amount of confirmation dialogs, which are stepped through using selenium webdriver.
 
+## Requirements
+
+You need a version of [ruby](https://www.ruby-lang.org) for it and [bundler](http://bundler.io/). The former you can probably easily install via your package manager and the latter one you can install easily via command line afterwards (just type `gem install bundler`).
+
 ## Usage
 
 ```sh
