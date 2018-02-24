@@ -12,7 +12,7 @@ You need a version of [ruby](https://www.ruby-lang.org) for it and [bundler](htt
 
 ```sh
 bundle
-ruby rub.rb
+ruby run.rb
 ```
 
 You'll be asked to enter your name, your password (securely of course), your username (that thing, that is written after www.facebook.com/ if you click on your profile) and the year you want to delete.
