@@ -45,7 +45,7 @@ class Eraser
 
   def delete_from_activity_log(year)
     goto_profile
-    driver.find_elements(:css, 'a').find {|link| link.text == 'Activity log'}.tap(&:location_once_scrolled_into_view).click
+    driver.find_elements(:css, 'a').find {|link| link.text.downcase == 'activity log'}.tap(&:location_once_scrolled_into_view).click
     driver.find_element(:css, "#year_#{year} a").click
 
     while @running
