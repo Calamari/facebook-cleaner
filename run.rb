@@ -19,6 +19,7 @@ class Eraser
     @closed_months = []
     ask_input
     login
+    set_language
     delete_from_activity_log(@year)
   ensure
     driver.quit
@@ -40,6 +41,12 @@ class Eraser
     password_element.submit()
 
     # Ensure not to land on the one tap login page
+    driver.navigate.to 'https://mbasic.facebook.com'
+  end
+
+  def set_language
+    driver.navigate.to 'https://mbasic.facebook.com/language.php'
+    driver.find_element(:link_text, 'English (UK)').click
     driver.navigate.to 'https://mbasic.facebook.com'
   end
 
