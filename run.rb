@@ -30,6 +30,7 @@ class Eraser
     @password = ask 'Password', echo: '*', forget: true
     @profile_name = ask 'Profile name'
     @year = ask 'Delete what year?'
+    exit unless ask 'We need to change your Facebook language to English (UK), is that ok?', default: true
   end
 
   def login
