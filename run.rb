@@ -30,7 +30,7 @@ class Eraser
     @closed_months = []
     ask_input
     login
-    set_language
+    set_language unless uk_english?
     delete_from_activity_log(@year)
   ensure
     driver.quit
@@ -41,7 +41,7 @@ class Eraser
     @password = ask 'Password', echo: '*', forget: true
     @profile_name = ask 'Profile name'
     @year = ask 'Delete what year?'
-    exit unless ask 'We need to change your Facebook language to English (UK), is that ok?', default: true
+    exit unless ask 'We might need to change your Facebook language to English (UK), is that ok?', default: true
   end
 
   def login
@@ -126,6 +126,10 @@ class Eraser
 
   def click_more_link
     driver.find_element(:xpath, "//*[contains(text(), '#{MORE_STRING}')]").click
+  end
+
+  def uk_english?
+    driver.find_elements(:xpath, "//*[contains(text(), 'Log Out (')]").length > 0
   end
 
   private
