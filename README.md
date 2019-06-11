@@ -13,7 +13,6 @@ Further you need a working selenium-webdriver environment (download and installa
 ## Usage
 
 ```sh
-bundle
 ruby run.rb
 ```
 
